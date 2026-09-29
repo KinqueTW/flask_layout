@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    <h1>Olá, Pietro</h1>
+    <h2>Turma: 2 ano tecnico</h2>
+
+    <ul>
+        {% for professor in professores %}
+            <li>
+                <strong>Professor:</strong> Garbin<br>
+                <strong>Matéria:</strong> D. Web
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
